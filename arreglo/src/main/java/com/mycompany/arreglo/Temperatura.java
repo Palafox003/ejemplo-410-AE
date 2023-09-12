@@ -20,4 +20,20 @@ public class Temperatura {
     public Temperatura(){
         
     }
+    
+    public float getMaxima(){
+        return this.maxima;
+    }
+    
+    public void setMaxima(float maxima){
+        this.maxima=maxima;
+    }
+    
+    public float getMinima(){
+        return this.minima;
+    }
+    
+    public void setMinima(float minima){
+        this.minima=minima;
+    }
 }
