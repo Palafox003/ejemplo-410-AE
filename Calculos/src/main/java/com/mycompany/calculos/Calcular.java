@@ -27,4 +27,40 @@ public class Calcular {
             return num3;
         }
     }
+    
+    public int cantidadPares(int num){
+        int pares=0;
+        for (int i = 1; i <= num; i++) {
+            if(i%2==0){
+                pares++;
+            }
+        }
+        return pares;
+    }
+    
+    public int sumatoria(int num){
+        int sumatoria=0;
+        for (int i = 1; i <= num; i++) {
+            sumatoria+=i;
+        }
+        return sumatoria;
+    }
+    
+    public int suma(int num){
+        if(num==1){
+            return 1;
+        }else{
+            return num+suma(num-1);
+        }
+    }
+    
+    public int impares(int num1, int num2){
+        int impares=0;
+        for (int i = num1; i <= num2; i++) {
+            if(i%2!=0){
+                impares++;
+            }
+        }
+        return impares;
+    }
 }
